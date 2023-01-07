@@ -12,7 +12,7 @@ class Animator {
             this.elapsedTime += tick;
             if (this.elapsedTime > this.totalTime) {
                 this.elapsedTime -= this.totalTime;
-                this.done = true;
+                if (!this.repeat) { this.done = true; }
             }
             const frame = this.currentFrame();
 

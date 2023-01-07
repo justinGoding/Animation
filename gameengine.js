@@ -106,6 +106,11 @@ class GameEngine {
                 this.entities.splice(i, 1);
             }
         }
+
+        if (this.entities.length == 0)
+        {
+            this.addEntity(new Woldorm(this));
+        }
     };
 
     loop() {

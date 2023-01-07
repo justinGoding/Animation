@@ -9,6 +9,7 @@ class Weekend
     update()
     {
         if (this.alpha < 1) { this.alpha += 0.01; }
+        if (this.animator.done) { this.removeFromWorld = true; }
     }
 
     draw(ctx)

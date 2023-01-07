@@ -37,6 +37,7 @@ class Woldorm {
         else{
             this.death();
         }
+        if (this.headAnimator.done) { this.removeFromWorld = true; }
     }
 
     movement() {
